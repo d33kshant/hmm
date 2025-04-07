@@ -1,6 +1,6 @@
 import collections, random
 
-def create_hmm(text):
+def create_transition_graph(text):
     words = text.split()
     transitions = collections.defaultdict(lambda: collections.defaultdict(int))
     
