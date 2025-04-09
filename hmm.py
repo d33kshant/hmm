@@ -1,7 +1,7 @@
 import collections, random
 
 def create_transition_graph(text):
-    words = text.split()
+    words = text.lower().split()
     transitions = collections.defaultdict(lambda: collections.defaultdict(int))
     
     for i in range(len(words) - 1):
