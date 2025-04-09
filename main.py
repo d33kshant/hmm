@@ -3,6 +3,8 @@ import callbacks
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
+
 app.layout = [
     dash.dcc.Store(id="transition-graph-store"),
     dbc.NavbarSimple(brand="hmm", dark=True, color="dark"),
