@@ -16,7 +16,7 @@ app.layout = [
                     dbc.Textarea(
                         id="input-text-area",
                         placeholder="Enter some text here ...",
-                        maxLength=300,
+                        maxLength=1000,
                         style={"height": "100px"},
                     ),
                 ]),
